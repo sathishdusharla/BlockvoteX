@@ -45,33 +45,8 @@ A secure, transparent, and decentralized blockchain-based voting system designed
 - **Smart Contracts**: Solidity
 
 ---
-
-📖 Documentation
-Architecture Overview
-Smart Contract Details
-API Endpoints
-Contributing Guidelines
-👥 Contributors
-Founder
-Sathish Dusharla – Lead Developer & Visionary
-Co-Founder
-Varshini Jonnalagadda – Smart Contract Developer & Blockchain Expert
-
-🛡️ License
-This project is licensed under the following terms:
-
-Custom License: All Rights Reserved
-sql
-Copy code
-Copyright (c) 2024 Sathish Dusharla
-
-All rights reserved. This software and its associated documentation may not be copied, reproduced, modified, distributed, or otherwise used without explicit permission from the copyright holder.
-
-This software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, or non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
-
-You must obtain explicit written permission from Sathish Dusharla to use, modify, or distribute any portion of this software.
-🗨️ Support
-Have questions or need help? Feel free to reach out:
-
-Open an issue
-Contact us via email@example.com
+## 👥 Contributors
+- **Founder**
+- **Sathish Dusharla** – Lead Developer & Visionary
+- **Co-Founder**
+- **Varshini Jonnalagadda** – Smart Contract Developer & Blockchain Expert
