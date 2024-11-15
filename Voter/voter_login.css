@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: black
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar (Header) */
+header {
+    background-color: #004AAD;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    font-size: 1.2em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.login-image {
+    flex: 1;
+    text-align: center;
+}
+
+.login-image img {
+    width: 80%;
+    max-width: 450px;
+}
+
+.login-form {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.login-form label {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+}
+
+.login-form input:focus {
+    border-color: #0066CC;
+    outline: none;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #0066CC;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login-form button:hover {
+    background-color: #004C99;
+}
+
+footer {
+    background-color: #004AAD;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 1em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

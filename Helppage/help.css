@@ -1,0 +1,158 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004AAD;
+    padding: 15px 30px;
+}
+
+.navbar h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Help & Support Section */
+.help-support {
+    margin: 50px 100px;
+    text-align: left;
+}
+
+.help-support h2 {
+    font-size: 2.5rem;
+    color: #00aaff;
+    margin-bottom: 15px;
+}
+
+.help-support p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.help-support ol {
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+.help-support ul.faqs {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.help-support ul.faqs li {
+    margin-bottom: 15px;
+}
+
+.help-support ul li a {
+    color: #00aaff;
+}
+
+a.view-more {
+    color: #00aaff;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Guides & Tutorials */
+.help-support ul.guides {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.help-support ul.guides li {
+    margin-bottom: 10px;
+}
+
+/* Support Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #00aaff;
+    border-radius: 8px;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #00aaff;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #00aaff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+/* Footer */
+footer {
+    background-color: #004AAD;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    margin-left: 10px;
+}

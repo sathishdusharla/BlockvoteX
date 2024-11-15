@@ -1,0 +1,159 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004AAD;
+    padding: 15px 30px;
+}
+
+.navbar h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Election Form and Illustration Section */
+.election-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.illustration {
+    width: 50%;
+    text-align: left;
+}
+
+.illustration img {
+    width: 90%;
+    height: auto;
+}
+
+/* Election Form Section */
+.election-form {
+    width: 50%;
+    text-align: left;
+}
+
+.election-form h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.election-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.election-form label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #000000; /* Labels in white */
+}
+
+.election-form input {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0; /* Input field background */
+    color: #000000; /* Input text in black */
+}
+
+button {
+    background-color: #004AAD;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003377;
+}
+
+/* Footer */
+footer {
+    background-color: #004AAD;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* Contestants Section */
+.contestants-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns all labels and inputs to the left */
+}
+
+/* Individual Contestant Entry */
+.contestant {
+    margin-bottom: 20px;
+    width: 100%; /* Ensures each contestant entry takes full width */
+}
+
+/* Labels and Inputs */
+.contestant label {
+    display: block; /* Makes each label a block element */
+    font-size: 1.2rem;
+    color: #000000; /* Ensures labels are visible */
+    margin-bottom: 5px; /* Adds space between label and input */
+}
+
+.contestant input {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0; /* Input field background */
+    color: #000000; /* Changes input text color for visibility */
+}
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Login - BlockvoteX</title>
+    <link rel="stylesheet" href="voter_login.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BlockvoteX</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Aboutpage/about.html">About</a></li>
+                    <li><a href="/ContactUspage/contactus.html">Contact Us</a></li>
+                    <li><a href="/Helppage/help.html">Help</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="login-section">
+                <div class="login-image">
+                    <img src="/Voter/voterloginimg.png" alt="Login illustration">
+                </div>
+                <div class="login-form">
+                    <h2>Voter Login</h2>
+                    <form id="loginForm">
+                        <label for="email">Mail Id:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <button type="submit">Login</button>
+                    </form>
+                    <p id="message"></p> <!-- To display login messages -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 BlockvoteX. All Rights Reserved. | 
+                <a href="/Footer/privacypolicy.html">Privacy Policy</a> | 
+                <a href="/Footer/termsandservices.html">Terms of Service</a> | 
+                <a href="/ContactUspage/contactus.html">Contact Us</a>
+            </p>
+        </footer>
+
+        <script>
+            document.getElementById('loginForm').addEventListener('submit', function(event) {
+                event.preventDefault();  // Prevent default form submission
+
+                const formData = new FormData(event.target);
+
+                // Fetch request to Google Apps Script Web App URL for login
+                fetch('https://script.google.com/macros/s/AKfycbwmyVk0E_apJzK-bgzWWWk-BEgxfCFBl_b1aXnwQfwsUtYvXkKksSl7DGH3uy2LzQ-zLw/exec', {  // Replace with your Web App URL
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const messageElement = document.getElementById('message');
+                    
+                    if (data.success) {
+                        messageElement.innerHTML = "<p style='color: green;'>" + data.message + "</p>";
+                        setTimeout(() => {
+                            // Redirect to voter dashboard with email as a query parameter
+                            window.location.href = `/Voter/voter_dashboard.html?email=${data.email}`;
+                        }, 2000);  // 2-second delay
+                    } else {
+                        messageElement.innerHTML = "<p style='color: red;'>" + data.message + "</p>";
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('message').innerHTML = "<p style='color: red;'>An error occurred: " + error.message + "</p>";
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Flexbox container for the entire page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spread between header and footer */
+}
+
+/* Ensure main content expands to take up available space */
+main {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004AAD;
+    padding: 15px 30px;
+}
+
+.navbar h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-right: auto; /* Pushes the h1 to the left */
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Align the nav links and admin button in the same flex container */
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Equal space between nav items */
+}
+
+.navbar ul li:last-child {
+    margin-right: 20px; /* Add space between the Help link and the Admin button */
+}
+
+.admin-btn {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-top: 60px;
+    color: #000000;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0 30px 0;
+    text-align: left;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.highlight {
+    color: #004AAD;
+}
+
+/* Voter Buttons */
+.vote-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+   
+}
+
+.voter-btn {
+    background: linear-gradient(to bottom, #004AAD, #00aaff);
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+.voter-btn:hover {
+    background: linear-gradient(to bottom, #00aaff, #004AAD);
+}
+
+/* Voter Illustration */
+.voter-illustration {
+    position: absolute;
+    top: 10px;
+    right: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.voter-illustration img {
+    width: 250px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #004AAD;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ffffff;
+    margin-left: 10px;
+}

@@ -1,0 +1,121 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure main content expands to take up available space */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004AAD;
+    padding: 15px 30px;
+}
+
+.navbar h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Section */
+.results {
+    margin: 30px auto;
+    width: 80%;
+}
+
+.results h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #000;
+    font-size: 1.2rem;
+}
+
+.winner {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.download-btn {
+    background-color: #004AAD;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Voters Count */
+.voters-count {
+    margin-top: 40px;
+    color: #004AAD;
+}
+
+.voters-count h1 {
+    font-size: 5rem;
+}
+
+.voters-count p {
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #004AAD;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    margin-left: 10px;
+}

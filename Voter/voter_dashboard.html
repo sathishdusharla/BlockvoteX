@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Dashboard - BlockvoteX</title>
+    <link rel="stylesheet" href="voter_dashboard.css"> 
+</head>
+<body>
+
+    <header class="navbar">
+        <h1>BlockvoteX</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/Aboutpage/about.html">About</a>
+            <a href="/ContactUspage/contactus.html">Contact Us</a>
+            <a href="/Helppage/help.html">Help</a>
+        </nav>
+    </header>
+
+    <div class="voter-dashboard">
+        <div class="voter-info">
+            <h2>Voter Information</h2>
+            <p><strong>Name:</strong> <span id="voter-name">Loading...</span></p>
+            <p><strong>Email:</strong> <span id="voter-email">Loading...</span></p>
+            <p><strong>Valid ID:</strong> <span id="voter-valid-id">Loading...</span></p>
+            <p><strong>Unique ID:</strong> <span id="voter-unique-id">Loading...</span></p>
+            <p><strong>Mobile:</strong> <span id="voter-mobile">Loading...</span></p>
+            <p><strong>Unique QR:</strong></p>
+            <div class="qr-code">
+                <img id="voter-qr" src="" alt="QR Code" style="width:150px; height:150px;"> 
+            </div>
+        </div>
+
+        <div class="vote-button">
+            <button id="vote-button">VOTE</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BlockvoteX. All Rights Reserved. | 
+            <a href="/Footer/privacypolicy.html">Privacy Policy</a> | 
+            <a href="/Footer/termsandservices.html">Terms of Service</a> | 
+            <a href="/ContactUspage/contactus.html">Contact Us</a>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('vote-button').addEventListener('click', function() {
+            window.location.href = 'voting.html?email=' + encodeURIComponent(document.getElementById('voter-email').textContent) + '&uniqueId=' + encodeURIComponent(document.getElementById('voter-unique-id').textContent);
+        });
+
+
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        function fetchVoterData(email) {
+            fetch(`https://script.google.com/macros/s/AKfycbwmyVk0E_apJzK-bgzWWWk-BEgxfCFBl_b1aXnwQfwsUtYvXkKksSl7DGH3uy2LzQ-zLw/exec?email=${email}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        alert("Voter not found!");
+                        return;
+                    }
+                    document.getElementById('voter-name').textContent = data.name;
+                    document.getElementById('voter-email').textContent = data.email;
+                    document.getElementById('voter-valid-id').textContent = data.validID;
+                    document.getElementById('voter-unique-id').textContent = data.uniqueID;
+                    document.getElementById('voter-mobile').textContent = data.mobile;
+                    document.getElementById('voter-qr').src = data.qrCode; 
+                })
+                .catch(error => {
+                    console.error('Error fetching voter data:', error);
+                    alert("An error occurred while fetching voter data.");
+                });
+        }
+
+        window.onload = function() {
+            const email = getQueryParam('email'); 
+            if (email) {
+                fetchVoterData(email);
+            } else {
+                alert('No email provided. Please log in again.');
+                window.location.href = '/Voter/voter_login.html';
+            }
+        }
+    </script>
+</body>
+</html>

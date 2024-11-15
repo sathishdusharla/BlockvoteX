@@ -1,0 +1,152 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #004AAD;
+    padding: 15px 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;  /* Color transition */
+}
+
+.navbar ul li a:hover {
+    color: #FFBF00;  /* Hover color change */
+}
+
+/* Form and Registration Styles */
+section.registration {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 5%;
+}
+
+.left-section img {
+    width: 400px;
+    height: auto;
+}
+
+.right-section {
+    width: 400px;
+    text-align: left;
+}
+
+.right-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Updated form elements styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 1.1em;
+    border: 2px solid #444;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition for border and background */
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #0099FF;
+    background-color: #ffffff;
+}
+
+button.btn-register {
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;  /* Smooth color and hover transition */
+}
+
+button.btn-register:hover {
+    background-color: #003d80;
+    transform: translateY(-2px);  /* Slight hover effect */
+}
+
+.login-link {
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: #0099ff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;  /* Color transition for links */
+}
+
+.login-link a:hover {
+    color: #FFBF00;  /* Hover color change */
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004AAD;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;  /* Smooth color transition for footer links */
+}
+
+footer a:hover {
+    color: #FFBF00;
+    text-decoration: underline;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockvoteX - Election Results</title>
+    <link rel="stylesheet" href="results.css">
+    <!-- Include jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>BlockvoteX</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Aboutpage/about.html">About</a></li>
+                    <li><a href="/ContactUspage/contactus.html">ContactUs</a></li>
+                    <li><a href="/Helppage/help.html">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="results">
+            <h2 id="election-name">Election Name</h2>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Department/Party</th>
+                        <th>Candidate Name</th>
+                        <th>No. of Votes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows will be added here -->
+                </tbody>
+            </table>
+            <h3 class="winner" id="winner">Winner: Name Of the Winner</h3>
+            <button class="download-btn" id="download-btn">Download Result</button>
+        </section>
+        <div class="voters-count">
+            <h1 id="voter-count">0</h1>
+            <p>Voters Count</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BlockvoteX. All Rights Reserved. | <a href="/Footer/privacypolicy.html">Privacy Policy</a> | <a href="/Footer/termsandservices.html">Terms of Service</a> | <a href="/ContactUspage/contactus.html">Contact Us</a></p>
+    </footer>
+
+    <script src="results.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #000;
+    min-height: 100vh; /* Set minimum height of body to full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background-color: #004AAD;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004AAD;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+footer a {
+    color: white;
+
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Voter Dashboard Layout */
+.voter-dashboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70vh;
+    padding: 20px;
+}
+
+/* Voter Information Box */
+.voter-info {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #0066CC;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 18px;  /* Consistent font size for voter info */
+}
+
+.voter-info h2 {
+    font-size: 24px;  /* Heading font size */
+    color: #000;
+}
+
+.voter-info p {
+    margin: 10px 0;
+    font-size: 16px;  /* Info text font size */
+    color: #000;
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Vote Button Section */
+.vote-button {
+    text-align: center;
+}
+
+.vote-button button {
+    background-color: #0066CC;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    font-size: 24px;  /* Consistent font size for button text */
+    border-radius: 10px;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+
+.vote-button button:hover {
+    background-color: #004C99;
+}
+
+/* Button bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}

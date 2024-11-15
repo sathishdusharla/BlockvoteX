@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BlockvoteX - Conduct Elections</title>
+    <link rel="stylesheet" href="conduct_elections.css">
+    <script defer src="conduct_elections.js"></script> <!-- Adding JS for dynamic contestants -->
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>BlockvoteX</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Aboutpage/about.html">About</a></li>
+                    <li><a href="/ContactUspage/contactus.html">Contact Us</a></li>
+                    <li><a href="/Helppage/help.html">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="election-content">
+            <div class="illustration">
+                <img src="/Admin/Admindashimg.png" alt="Conduct Election Illustration">
+            </div>
+            <div class="election-form">
+                <h2>Conduct Elections</h2>
+                <form id="electionForm">
+                    <label for="election-name">Name of the Election:</label>
+                    <input type="text" id="election-name" name="election-name" required><br>
+
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" name="start-date" required><br>
+
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" name="end-date" required><br>
+
+                    <label for="num-contestants">Number of Contestants:</label>
+                    <input type="number" id="num-contestants" name="num-contestants" min="1" required><br>
+
+                    <div id="contestants-section">
+                        <!-- Dynamic Contestant Details Will Be Added Here -->
+                    </div>
+
+                    <button type="submit">Conduct Election</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 BlockvoteX. All Rights Reserved. | 
+            <a href="/Footer/privacypolicy.html">Privacy Policy</a> | 
+            <a href="/Footer/termsandservices.html">Terms of Service</a> | 
+            <a href="/ContactUspage/contactus.html">Contact Us</a>
+        </p>
+    </footer>
+</body>
+</html>

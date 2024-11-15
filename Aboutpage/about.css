@@ -1,0 +1,94 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004AAD;
+    padding: 15px 30px;
+}
+
+.navbar h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* About Section */
+.about {
+    margin: 50px 100px;
+    text-align: left;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #00aaff;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.about ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.about ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.about ul li strong {
+    color: #00aaff;
+}
+
+/* Footer */
+footer {
+    background-color: #004AAD;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    margin-left: 10px;
+}
