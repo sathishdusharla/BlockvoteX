@@ -24,7 +24,7 @@ const VoterLogin = () => {
     formDataToSend.append('password', formData.password);
 
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbwmyVk0E_apJzK-bgzWWWk-BEgxfCFBl_b1aXnwQfwsUtYvXkKksSl7DGH3uy2LzQ-zLw/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbxevc1m3itT6qLLrxKY2nf1kFCOmOvskSF7WWmViLnZTOur5l2DJwMPdZtGplwpKK5GkQ/exec', {
         method: 'POST',
         body: formDataToSend
       });
