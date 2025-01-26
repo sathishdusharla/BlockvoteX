@@ -44,7 +44,16 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-gray-800">
           <p className="text-center text-gray-400">
-            © {new Date().getFullYear()} BlockVoteX. All rights reserved.
+            © {new Date().getFullYear()} BlockVoteX. All rights reserved. 
+            Developed by{' '}
+            <a
+              href="https://github.com/sathishdusharla"
+              className="text-blue-500 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sathish Dusharla
+            </a>.
           </p>
         </div>
       </div>
